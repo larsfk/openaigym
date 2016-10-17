@@ -38,12 +38,12 @@ def episode():
         if done and reward < 1:
             # print "You died at round", counter
             state = env.reset()
-            print reward
+            #print reward
 
         counter += 1
         # print "You found it at round", counter
-    print "Total reward", total_reward
-    return counter
+    #print "Total reward", total_reward
+    return total_reward
 
 
 def main():
@@ -51,7 +51,7 @@ def main():
     sum = 0
     for i in range(100):
         sum += episode()
-    print sum / 100
+    print "Average total reward", sum / 100
 
 
 if __name__ == "__main__":

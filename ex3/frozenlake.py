@@ -10,7 +10,7 @@ env = gym.make('FrozenLake-v0')
 
 Q = []
 SIZE = env.observation_space.n
-LEARNING_RATE = 0.3
+LEARNING_RATE = 0.1
 DISCOUNT_RATE = 0.99
 E = 0.1
 
